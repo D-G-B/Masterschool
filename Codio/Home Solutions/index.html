@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Home Solutions Login</title>
+</head>
+<body>
+  <main class="main-container">
+    <section class="home-section">
+      <div class="logo">
+        <img src="homes.svg" alt="House Image">
+      </div>
+      <h1>Home Solutions</h1>
+    </section>
+
+    <section class="login-section">
+      <h2>Log In</h2>
+      <form action="/login" method="post">
+        <div class="form-group">
+          <label for="email" class="visually-hidden">e-mail</label>
+          <input type="email" id="email" name="email" placeholder="e-mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="visually-hidden">password</label>
+          <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+
+        <button type="submit" class="login-button">Log In</button>
+      </form>
+
+      <p class="register-text">
+        Don't have an account? <a href="/register">Register</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
