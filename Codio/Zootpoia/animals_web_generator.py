@@ -7,27 +7,29 @@ def load_data(file_path):
         return json.load(handle)
 
 
-def make_animals_string(data):
+def make_animals_html(data):
 
     output = ""
 
     for animal in data:
-        output_parts = []
+        list_html = '<li class="cards__item">'
 
         if name := animal.get("name"):
-            output_parts.append(f"Name: {name}")
+            list_html +=  f'<div class="card__title">{name}</div>'
+
+        list_html += '<p class="card__text">'
 
         if diet := animal.get("characteristics", {}).get("diet"):
-            output_parts.append(f"Diet: {diet}")
+            list_html += f'<strong>Diet:</strong> {diet}<br/>'
 
         if location := animal.get("locations", [None])[0]:
-            output_parts.append(f"Location: {location}")
+            list_html += f'<strong>Location:</strong> {location}<br/>'
 
         if ani_type := animal.get("characteristics", {}).get("type"):
-            output_parts.append(f"Type: {ani_type}")
+            list_html += f'<strong>Type:</strong> {ani_type}<br/>'
 
-        if output_parts:
-            output += "\n".join(output_parts) + "\n\n"
+        list_html += '</p></li>'
+        output += list_html
 
     return output
 
@@ -49,7 +51,7 @@ def main():
     template = read_template('animals_template.html')
 
     # Generate the string of animal information
-    animals_string = make_animals_string(animals_data)
+    animals_string = make_animals_html(animals_data)
 
     # Replace the placeholder in the template
     output_html = template.replace('__REPLACE_ANIMALS_INFO__', animals_string)
