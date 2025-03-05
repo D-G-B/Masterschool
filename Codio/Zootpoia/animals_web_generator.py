@@ -9,27 +9,22 @@ def load_data(file_path):
 
 def print_info(data):
     for animal in data:
-        output_info = {}
+        output_parts = []
 
-        characteristics = animal.get("characteristics", {})
-
-        # Check and add each field if it exists
         if name := animal.get("name"):
-            output_info["Name"] = name
+            output_parts.append(f"Name: {name}")
 
-        if diet := characteristics.get("diet"):
-            output_info["Diet"] = diet
+        if diet := animal.get("characteristics", {}).get("diet"):
+            output_parts.append(f"Diet: {diet}")
 
         if location := animal.get("locations", [None])[0]:
-            output_info["Location"] = location
+            output_parts.append(f"Location: {location}")
 
-        if ani_type := characteristics.get("type"):
-            output_info["Type"] = ani_type
+        if ani_type := animal.get("characteristics", {}).get("type"):
+            output_parts.append(f"Type: {ani_type}")
 
-        if output_info:
-            for key, value in output_info.items():
-                print(f"{key}: {value}")
-            print()
+        if output_parts:
+            print("\n".join(output_parts) + "\n")
 
 
 def main():
