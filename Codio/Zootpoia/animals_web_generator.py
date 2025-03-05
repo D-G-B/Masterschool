@@ -33,18 +33,19 @@ def make_animals_html(data):
         if name := animal.get("name"):
             list_html += f'<div class="card__title">{name}</div>'
 
-        list_html += '<p class="card__text">'
+        list_html += '<div class="card__text">'
+        list_html += '<ul class="card__details">'
 
         if diet := animal.get("characteristics", {}).get("diet"):
-            list_html += f'<strong>Diet:</strong> {diet}<br/>'
+            list_html += f'<li class="card__detail-item"><strong>Diet:</strong> {diet}</li>'
 
         if location := animal.get("locations", [None])[0]:
-            list_html += f'<strong>Location:</strong> {location}<br/>'
+            list_html += f'<li class="card__detail-item"><strong>Location:</strong> {location}</li>'
 
         if ani_type := animal.get("characteristics", {}).get("type"):
-            list_html += f'<strong>Type:</strong> {ani_type}<br/>'
+            list_html += f'<li class="card__detail-item"><strong>Type:</strong> {ani_type}</li>'
 
-        list_html += '</p></li>'
+        list_html += '</ul></div></li>'
         output += list_html
 
     return output
