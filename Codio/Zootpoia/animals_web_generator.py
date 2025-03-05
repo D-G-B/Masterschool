@@ -8,14 +8,13 @@ def load_data(file_path):
 
 
 def make_animals_html(data):
-
     output = ""
 
     for animal in data:
         list_html = '<li class="cards__item">'
 
         if name := animal.get("name"):
-            list_html +=  f'<div class="card__title">{name}</div>'
+            list_html += f'<div class="card__title">{name}</div>'
 
         list_html += '<p class="card__text">'
 
@@ -33,10 +32,12 @@ def make_animals_html(data):
 
     return output
 
+
 def read_template(html_path):
     with open(html_path, "r") as file:
         file_data = file.read()
     return file_data
+
 
 def write_html_file(html_content):
     with open("animals.html", "w") as file:
