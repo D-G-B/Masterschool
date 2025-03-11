@@ -9,3 +9,6 @@
 [submodule "Codio/Home-Solutions"]
 	path = Codio/Home-Solutions
 	url = git@github.com:D-G-B/Home-Solutions.git
+[submodule "Codio/My-Zootopia"]
+	path = Codio/My-Zootopia
+	url = git@github.com:D-G-B/My-Zootopia.git
