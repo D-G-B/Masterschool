@@ -4,3 +4,9 @@
 [submodule "Codio/Zootpoia"]
 	path = Codio/Zootpoia
 	url = git@github.com:D-G-B/Zootpoia.git
+[submodule "Codio/API_-_Requests"]
+	path = Codio/API_-_Requests
+	url = git@github.com:D-G-B/API_-_Requests.git
+[submodule "Codio/Home-Solutions"]
+	path = Codio/Home-Solutions
+	url = git@github.com:D-G-B/Home-Solutions.git
