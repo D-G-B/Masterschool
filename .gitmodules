@@ -1,3 +1,6 @@
 [submodule "Codio/Titanic"]
 	path = Codio/Titanic
 	url = git@github.com:D-G-B/Titanic.git
+[submodule "Codio/Zootpoia"]
+	path = Codio/Zootpoia
+	url = git@github.com:D-G-B/Zootpoia.git
