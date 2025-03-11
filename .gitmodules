@@ -2,10 +2,6 @@
 	path = Codio/Titanic
 	url = git@github.com:D-G-B/Titanic.git
 
-[submodule "Codio/My-Zootopia"]
-	path = Codio/My-Zootopia
-	url = git@github.com:D-G-B/My-Zootopia.git
-
 [submodule "Codio/API-and-RequestsLib"]
     path = Codio/API-and-RequestsLib
     url = git@github.com:D-G-B/API-and-RequestsLib.git
