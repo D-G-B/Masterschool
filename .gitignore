@@ -8,3 +8,5 @@ __pycache__/
 # Ignore IDE files (e.g., PyCharm)
 .idea/
 
+.DS_Store
+
