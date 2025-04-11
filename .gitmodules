@@ -17,3 +17,6 @@
 [submodule "Codio/Best-Buy"]
 	path = Codio/Best-Buy
 	url = git@github.com:D-G-B/Best-Buy.git
+[submodule "Codio/Best-Buy-2.0"]
+	path = Codio/Best-Buy-2.0
+	url = git@github.com:D-G-B/Best-Buy-2.0.git
