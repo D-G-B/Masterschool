@@ -20,3 +20,6 @@
 [submodule "Codio/Best-Buy-2.0"]
 	path = Codio/Best-Buy-2.0
 	url = git@github.com:D-G-B/Best-Buy-2.0.git
+[submodule "Codio/Movie-Project-OOP+Web"]
+	path = Codio/Movie-Project-OOP+Web
+	url = git@github.com:D-G-B/Movie-Project-OOP-Web.git
