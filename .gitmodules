@@ -26,3 +26,6 @@
 [submodule "Codio/Masterblog"]
 	path = Codio/Masterblog
 	url = git@github.com:D-G-B/Masterblog.git
+[submodule "Codio/Masterblog-API"]
+	path = Codio/Masterblog-API
+	url = git@github.com:D-G-B/Masterblog-API.git
