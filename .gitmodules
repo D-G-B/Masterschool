@@ -23,3 +23,6 @@
 [submodule "Codio/Movie-Project-OOP+Web"]
 	path = Codio/Movie-Project-OOP+Web
 	url = git@github.com:D-G-B/Movie-Project-OOP-Web.git
+[submodule "Codio/Masterblog"]
+	path = Codio/Masterblog
+	url = git@github.com:D-G-B/Masterblog.git
