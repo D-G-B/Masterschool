@@ -17,15 +17,19 @@
 [submodule "Codio/Best-Buy"]
 	path = Codio/Best-Buy
 	url = git@github.com:D-G-B/Best-Buy.git
+
 [submodule "Codio/Best-Buy-2.0"]
 	path = Codio/Best-Buy-2.0
 	url = git@github.com:D-G-B/Best-Buy-2.0.git
+
 [submodule "Codio/Movie-Project-OOP+Web"]
 	path = Codio/Movie-Project-OOP+Web
 	url = git@github.com:D-G-B/Movie-Project-OOP-Web.git
+
 [submodule "Codio/Masterblog"]
 	path = Codio/Masterblog
 	url = git@github.com:D-G-B/Masterblog.git
+
 [submodule "Codio/Masterblog-API"]
 	path = Codio/Masterblog-API
 	url = git@github.com:D-G-B/Masterblog-API.git
