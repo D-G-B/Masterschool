@@ -33,3 +33,7 @@
 [submodule "Codio/Masterblog-API"]
 	path = Codio/Masterblog-API
 	url = git@github.com:D-G-B/Masterblog-API.git
+
+[submodule "Codio/Book-Alchemy"]
+	path = Codio/Book-Alchemy
+	url = git@github.com:D-G-B/Book-Alchemy.git
