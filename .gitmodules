@@ -37,3 +37,6 @@
 [submodule "Codio/Book-Alchemy"]
 	path = Codio/Book-Alchemy
 	url = git@github.com:D-G-B/Book-Alchemy.git
+[submodule "Codio/movi_web_app"]
+	path = Codio/movi_web_app
+	url = git@github.com:D-G-B/movi_web_app.git
